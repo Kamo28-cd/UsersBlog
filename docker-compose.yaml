@@ -1,13 +1,5 @@
 version: "3.8"
 services:
-  api:
-    build: ./api
-    container_name: api_c
-    ports:
-      - "4001:4001"
-    volumes:
-      - ./api:/app
-      - ./app/node_modules
   frontend:
     build: .
     container_name: frontend_c
