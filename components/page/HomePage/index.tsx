@@ -56,6 +56,7 @@ const HomePage = () => {
           onChange={(e) => setSearch(e.target.value)}
           variant="outlined"
           fullWidth={true}
+          sx={{ maxWidth: 650 }}
         />
 
         {filteredUsers.map((users) => (

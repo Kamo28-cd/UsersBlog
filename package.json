@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "mock-server": "json-server --watch ./data/db.json -p 4001 -d 10"
+    "mock-server": "json-server --watch ./data/db.json -p 4001 -d 10",
+    "start-app": "npm run dev & npm run mock-server"
   },
   "dependencies": {
     "@emotion/css": "^11.10.5",

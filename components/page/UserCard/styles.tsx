@@ -65,3 +65,7 @@ export const StyledIconContainer = styled.div`
     position: relative;
   }
 `;
+
+export const ChevronContainer = styled.div`
+  cursor: pointer;
+`;

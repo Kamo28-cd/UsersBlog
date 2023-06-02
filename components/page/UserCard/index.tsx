@@ -7,6 +7,7 @@ import {
   StyledButton,
   StyledContainer,
   StyledIconContainer,
+  ChevronContainer,
 } from "./styles";
 import FlexContainer from "../../common/FlexContainer";
 import CustomButton from "../../common/CustomButton";
@@ -63,13 +64,13 @@ const UserCard: React.FC<IUserCard> = ({
       flexDirection="column"
     >
       <FlexContainer $width="650">
-        <div>
+        <ChevronContainer>
           {height ? (
             <ExpandLessIcon onClick={handleHeight} />
           ) : (
             <ExpandMoreIcon onClick={handleHeight} />
           )}
-        </div>
+        </ChevronContainer>
         <div style={{ position: "relative" }}>
           <StyledImage src={profile_image} />
 
